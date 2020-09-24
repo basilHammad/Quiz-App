@@ -1,0 +1,105 @@
+:root{
+    font-size: 62.5%;
+    background-color:#D3DFB8;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.main-cont{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 5rem;
+}
+.status{
+    justify-self: flex-start;
+    width:60vw ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+.question-num-cont{
+    width: 30%;
+}
+.question-num{
+    width: 100%;
+    height: 5rem;
+    border: .2rem solid#0B0033;
+}
+.counter{
+    width: 0;
+    height: 4.8rem;
+    background-color:#0B0033 ;
+}
+h3{
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color:#0B0033;
+    font-weight: bold;
+    color:#0B0033;
+}
+.score{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    text-align: center;
+}
+.score span{
+    font-size: 4rem;
+    top: 5.5rem;
+    font-weight: bold;
+    color:#0B0033;
+}
+h2{
+    font-size: 3rem;
+    color:#0B0033;
+    user-select: none;
+    margin-bottom: 5rem;
+    margin-top: 3rem;
+    width: 60vw;
+    text-align: center;
+}
+.choices{
+    display: flex;
+    width: 70vw;
+    height: 5rem;
+    background-color:#6CBEED ;
+    margin-bottom: .5rem;
+}
+.choices:hover{
+    border: .2rem solid #0B0033;
+    box-shadow: 0 .4rem 1.4rem 0 #0B0033;
+    transform: translateY(-.1rem);
+    transition: transform 150ms;
+}
+.choices span{
+    flex: 1;
+    background-color: #0B0033;
+    color: #ffffff;
+    text-align: center;
+    line-height: 5rem;
+    font-size: 2rem;
+
+}
+.choices div{
+    flex: 5;
+    padding-left: 2rem;
+    line-height: 5rem;
+    font-size: 2rem;
+    color: #ffffff;
+}
+.choices div:hover{
+    cursor: pointer;
+}
+.stop{
+    pointer-events: none;
+}
